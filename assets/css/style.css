@@ -1,5 +1,6 @@
 @import url("component/navbar.css");
 @import url("component/hero-image.css");
+@import url("component/footer.css");
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap');
 
 html{
@@ -12,6 +13,8 @@ body{
     box-sizing: border-box;
 }
 body:has(#hero.coder){
+    background-color: #0d0d0d;
+    color: white;
     --colorOne: #11009E;
     --colorTwo: #4942E4;
     --colorThree: #8696FE;
