@@ -18,11 +18,13 @@ nextButton.onclick = function(){
         hero.classList.remove("main");
         hero.classList.add("coder");
         nextButton.style.display = "none";
+        prevButton.innerHTML = '<i class="fa-solid fa-house"></i>';
     }
     else if(hero.classList.contains("designer")){
         hero.classList.remove("designer");
         hero.classList.add("main");
         prevButton.style.display = "block";
+        nextButton.innerHTML = '<i class="fa-solid fa-code"></i>';
     }
     changeWebsite();
 }
@@ -32,11 +34,13 @@ prevButton.onclick = function(){
         hero.classList.remove("coder");
         hero.classList.add("main");
         nextButton.style.display = "block";
+        prevButton.innerHTML = '<i class="fa-solid fa-paintbrush"></i>';
     }
     else if(hero.classList.contains("main")){
         hero.classList.remove("main");
         hero.classList.add("designer");
         prevButton.style.display = "none";
+        nextButton.innerHTML = '<i class="fa-solid fa-house"></i>';
     }
     changeWebsite();
 }
