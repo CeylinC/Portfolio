@@ -1,0 +1,97 @@
+#hero{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+#hero .slider-button{
+    position: absolute;
+    top: 50%;
+    color: white;
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+    border: 5px solid white;
+    border-radius: 50%;
+    font-size: 1.8rem;
+    cursor: pointer;
+    z-index: 100;
+}
+#hero .slider-button i{
+    transform: translate(0%, 10%);
+}
+#hero #prev-slider-button{
+    left: 25px;
+}
+#hero #next-slider-button{
+    right: 25px;
+}
+#hero #main-page{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 1)), url("../../img/main-page-image.jpg");
+    background-size: cover;
+    background-position: center left;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#hero #main-page .hero-header{
+    color: white;
+    font-size: 5rem;
+    line-height: 5rem;
+    text-align: center;
+}
+#hero #coder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 10;
+    position: absolute;
+    left: 101%;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 1)), url("../../img/coder-image.jpg");
+    background-size: cover;
+    background-position: center left;
+    background-repeat: no-repeat;
+    transition: left 1s ease-in-out;
+}
+#hero .header{
+    color: white;
+    font-size: 5rem;
+}
+#hero .text{
+    margin-top: 30px;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    width: 50%;
+}
+#hero.coder #coder{
+    left: 0;
+}
+#hero #designer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 10;
+    position: absolute;
+    right: 101%;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 1)), url("../../img/designer-image.jpg");
+    background-size: cover;
+    background-position: center left;
+    background-repeat: no-repeat;
+    transition: right 1s ease-in-out;
+}
+#hero.designer #designer{
+    right: 0;
+}
