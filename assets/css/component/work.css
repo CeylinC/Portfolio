@@ -1,0 +1,35 @@
+#works{
+    padding: 50px;
+}
+#works .work-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+#works .work-list .work{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    margin: 10px 0px;
+}
+#works .work-list .work img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#works .work-list .work .title{
+    position: absolute;
+    width: calc(100%);
+    left: 0px;
+    bottom: -100px;
+    text-align: center;
+    color: white;
+    transition: bottom 0.5s ease-in-out;
+    padding: 40px 0 20px 0;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1));
+}
+#works .work-list .work:hover .title{
+    bottom: 0px;
+}
