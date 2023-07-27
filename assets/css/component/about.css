@@ -1,9 +1,9 @@
 #about{
     width: 100%;
-    height: calc(100vh - 64px);
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-top: 64px;
 }
 #about .photo{
     width: 300px;
@@ -71,4 +71,29 @@ color: var(--colorFour);
 #about .content .download-cv:hover{
     letter-spacing: 5px;
     transform: translateX(-25px);
+}
+@media screen and (max-width: 768px) {
+    #about{
+        flex-direction: column;
+    }
+    #about .photo{
+        margin-right: 0;
+    }
+    #about .content{
+        width: 80%;
+    }
+    #about .content p{
+        width: 100%;
+        margin-bottom: 32px;
+    }
+    #about .content .information span{
+        width: auto;
+    }
+    #about .content .download-cv{
+        display: block;
+        text-align: center;
+    }
+    #about .content .download-cv:hover{
+        transform: translateX(0);
+    }
 }

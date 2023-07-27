@@ -95,3 +95,24 @@
 #hero.designer #designer{
     right: 0;
 }
+@media screen and (max-width: 768px) {
+    #hero #main-page{
+        display: block;
+    }
+    #hero #main-page .hero-header{
+        font-size: 3rem;
+        line-height: 3rem;
+        margin-top: 150px;
+    }
+    #hero .slider-button{
+        top: 75%;
+    }
+    #hero .header{
+        font-size: 3rem;
+        text-align: center;
+        line-height: 3rem;
+    }
+    #hero .text{
+        width: 90%;
+    }
+}

@@ -40,3 +40,10 @@ h1{
     font-size: 3em;
     border-bottom: 5px solid var(--colorFour);
 }
+@media screen and (max-width: 768px) {
+    h1{
+        display: block;
+        margin: 10px;
+        text-align: center;
+    }
+}

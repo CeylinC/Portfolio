@@ -1,18 +1,26 @@
 #works{
     padding: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#works h1{
+    text-align: center;
+    width: 250px;
 }
 #works .work-list{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     align-items: center;
+    justify-content: center;
 }
 #works .work-list .work{
     width: 300px;
     height: 300px;
     position: relative;
     overflow: hidden;
-    margin: 10px 0px;
+    margin: 10px;
 }
 #works .work-list .work img{
     height: 100%;
@@ -32,4 +40,9 @@
 }
 #works .work-list .work:hover .title{
     bottom: 0px;
+}
+@media screen and (max-width: 768px) {
+    #works{
+        padding: 50px 10px;
+    }
 }
