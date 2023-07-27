@@ -1,6 +1,7 @@
 @import url("component/navbar.css");
 @import url("component/hero-image.css");
 @import url("component/about.css");
+@import url("component/experience.css");
 @import url("component/footer.css");
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500&display=swap');
 
@@ -26,6 +27,7 @@ body:has(#hero.coder){
 }
 body:has(#hero.designer){
     --colorOne: #FF731D;
+    --colorTwo: #ff9b31;
     --colorFour: #FFD8A9;
     --headerColor: #FF731D;
     --aboutInformationColor: #FFFAF4;

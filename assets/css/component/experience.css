@@ -1,0 +1,32 @@
+#experience-education{
+    width: 100%;
+    height: calc(100vh - 64px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+#experience-education > *{
+    height: 80%;
+}
+#experience-education h1{
+    text-align: center;
+}
+#experience-education .education-card,
+#experience-education .experience-card{
+    width: 260px;
+    padding: 10px 20px 10px 20px;
+    background-color: var(--aboutInformationColor);
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+#experience-education .education-card .title,
+#experience-education .experience-card .title{
+    margin: 0;
+    color: var(--headerColor);
+}
+#experience-education .education-card .time,
+#experience-education .experience-card .time{
+    margin: 0;
+    color: var(--colorTwo);
+}
