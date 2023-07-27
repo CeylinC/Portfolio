@@ -1,16 +1,10 @@
 const hero = document.getElementById("hero"),
-    mainPage = document.getElementById("main-page"),
     detail = document.getElementById("detail"),
     nextButton = document.getElementById("next-slider-button"),
     prevButton = document.getElementById("prev-slider-button");
 
-function changeWebsite() {
-    if (hero.classList.contains("main")) {
-        detail.style.display = "none";
-    }
-    else {
-        detail.style.display = "block";
-    }
+function displayDetail() {
+    detail.style.display = hero.classList.contains("main") ? "none" : "block" ;
 }
 
 nextButton.onclick = function(){
@@ -19,6 +13,7 @@ nextButton.onclick = function(){
         hero.classList.add("coder");
         nextButton.style.display = "none";
         prevButton.innerHTML = '<i class="fa-solid fa-house"></i>';
+        changeTexts("coder");
     }
     else if(hero.classList.contains("designer")){
         hero.classList.remove("designer");
@@ -26,7 +21,7 @@ nextButton.onclick = function(){
         prevButton.style.display = "block";
         nextButton.innerHTML = '<i class="fa-solid fa-code"></i>';
     }
-    changeWebsite();
+    displayDetail();
 }
 
 prevButton.onclick = function(){
@@ -41,8 +36,9 @@ prevButton.onclick = function(){
         hero.classList.add("designer");
         prevButton.style.display = "none";
         nextButton.innerHTML = '<i class="fa-solid fa-house"></i>';
+        changeTexts("designer");
     }
-    changeWebsite();
+    displayDetail();
 }
 
-changeWebsite();
+displayDetail();
