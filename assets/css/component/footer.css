@@ -1,7 +1,8 @@
 footer{
     padding: 25px 0;
-    background-color: black;
+    background-color: var(--aboutInformationColor);
     display: flex;
     justify-content: center;
     align-items: center;
+    color: var(--colorTwo);
 }

@@ -10,7 +10,7 @@ function changeTexts(job) {
     changeWork(job);
 }
 
-function changeExperience(job){
+function changeExperience(job) {
     experience.children[1].innerHTML = "";
     me[job].experiences.forEach(exp => {
         let expCard = `
@@ -30,7 +30,7 @@ function changeExperience(job){
     });
 }
 
-function changeSkill(job){
+function changeSkill(job) {
     skill.innerHTML = "";
     me[job].skills.forEach(skill => {
         let skillCard = `
@@ -48,7 +48,7 @@ function changeSkill(job){
     });
 }
 
-function changeWork(job){
+function changeWork(job) {
     workList.innerHTML = "";
     me[job].works.forEach(work => {
         let workCard = `
@@ -63,18 +63,18 @@ function changeWork(job){
 
 const me = {
     designer: {
-        about: "Hello, I'm Ceylin. I have been dealing with design for 6 years. I have been involved in activities such as 3D modeling, photoshop, post preparation.",
+        about: "Hello, I'm Ceylin. I have been designing for 6 years. I have been involved in activities such as 3D modeling, photoshop, post design, logo design, user interface design, profile and cover art design on social media.",
         experiences: [
             {
-            title: "Post Designer",
-            company: "Google Developer Student Clubs",
-            time: "Oct 2022 - Jun 2023"
+                title: "Post Designer",
+                company: "Google Developer Student Clubs",
+                time: "Oct 2022 - Jun 2023"
             },
         ],
         skills: [
             {
-            name: "Photoshop",
-            level: "70"
+                name: "Photoshop",
+                level: "70"
             },
             {
                 name: "Illustrator",
@@ -158,7 +158,7 @@ const me = {
 
     },
     coder: {
-        about: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste commodi atque asperiores mollitia quae blanditiis possimus ab et ducimus.",
+        about: "Hello, I'm Ceylin. I have been dealing with software for 3 years. I have been in console application, desktop application, mobile application, game and website construction.",
         experiences: [
             {
                 title: "Front-end Intern",

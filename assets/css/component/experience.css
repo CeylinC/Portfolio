@@ -1,10 +1,10 @@
 #experience-education{
     width: 100%;
-    height: calc(100vh - 64px);
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
+    padding: 64px 0;
+    background-color: var(--eduexpBgColor);
 }
 #experience-education > *{
     height: 80%;
@@ -29,4 +29,10 @@
 #experience-education .experience-card .time{
     margin: 0;
     color: var(--colorTwo);
+}
+@media screen and (max-width: 768px) {
+    #experience-education{
+        padding-top: 100px;
+        flex-direction: column;
+    }
 }
