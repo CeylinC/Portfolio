@@ -1,10 +1,9 @@
 #experience-education{
     width: 100%;
-    height: calc(100vh - 64px);
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
+    padding-top: 64px;
 }
 #experience-education > *{
     height: 80%;
