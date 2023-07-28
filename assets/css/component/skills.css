@@ -21,6 +21,7 @@
 #skill .skill-text span:last-child{
     position: absolute;
     bottom: -10px;
+    color: var(--colorTwo);
 }
 #skill .skill-text .w-90{
     margin-left: calc(90% - 1.3rem);
@@ -51,7 +52,7 @@
     border-radius: 10px;
     height: 16px;
     width: 100%;
-    background-color: lightcyan;
+    background-color: var(--colorFour);
     overflow: hidden;
 }
 .progress-bar{
